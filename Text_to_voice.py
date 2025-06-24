@@ -15,3 +15,6 @@ class TextToSpeechApp:
         # Create GUI elements
         tk.Label(root, text="Enter Text:").pack(pady=10)
         
+        self.text_input = tk.Text(root, height=5, width=40)
+        self.text_input.pack(pady=10)
+        
