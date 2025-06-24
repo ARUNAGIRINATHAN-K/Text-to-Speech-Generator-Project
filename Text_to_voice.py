@@ -49,4 +49,6 @@ class TextToSpeechApp:
         self.engine.say(text)
         self.engine.runAndWait()
     
-    
+    def clear_text(self):
+        self.text_input.delete("1.0", tk.END)
+
