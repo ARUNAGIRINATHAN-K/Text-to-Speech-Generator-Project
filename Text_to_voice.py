@@ -52,3 +52,7 @@ class TextToSpeechApp:
     def clear_text(self):
         self.text_input.delete("1.0", tk.END)
 
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = TextToSpeechApp(root)
+    root.mainloop()
