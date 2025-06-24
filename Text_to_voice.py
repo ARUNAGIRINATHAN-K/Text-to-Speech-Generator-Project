@@ -45,4 +45,8 @@ class TextToSpeechApp:
                 self.engine.setProperty('voice', voice.id)
                 break
         
-       
+        # Speak the text
+        self.engine.say(text)
+        self.engine.runAndWait()
+    
+    
