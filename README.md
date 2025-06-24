@@ -24,6 +24,8 @@ On Linux, a TTS engine like espeak may be required (sudo apt-get install espeak)
 Run the script:python text_to_speech.py
 ```
 
+![GUI](Sample-screenshort.png)
+
 A GUI window will open with the following elements:
 A text box to enter text.
 A dropdown menu to select a voice (available voices depend on your system).
