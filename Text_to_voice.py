@@ -12,3 +12,6 @@ class TextToSpeechApp:
         # Initialize pyttsx3 engine
         self.engine = pyttsx3.init()
         
+        # Create GUI elements
+        tk.Label(root, text="Enter Text:").pack(pady=10)
+        
