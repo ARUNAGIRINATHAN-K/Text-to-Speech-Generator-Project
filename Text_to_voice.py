@@ -18,3 +18,13 @@ class TextToSpeechApp:
         self.text_input = tk.Text(root, height=5, width=40)
         self.text_input.pack(pady=10)
         
+        # Voice selection
+        tk.Label(root, text="Select Voice:").pack(pady=5)
+        self.voice_var = tk.StringVar()
+        self.voices = self.engine.getProperty('voices')
+        voice_names = [voice.name for voice in self.voices]
+        self.voice_menu = tk.OptionMenu(root, self.voice_var, *voice_names)
+        self.voice_menu.pack(pady=5)
+        if voice_names:
+            self.voice_var.set(voice_names[0])
+        
