@@ -38,3 +38,11 @@ class TextToSpeechApp:
             messagebox.showwarning("Warning", "Please enter some text!")
             return
         
+        # Set selected voice
+        selected_voice = self.voice_var.get()
+        for voice in self.voices:
+            if voice.name == selected_voice:
+                self.engine.setProperty('voice', voice.id)
+                break
+        
+       
