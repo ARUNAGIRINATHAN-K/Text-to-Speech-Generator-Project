@@ -28,3 +28,7 @@ class TextToSpeechApp:
         if voice_names:
             self.voice_var.set(voice_names[0])
         
+        # Buttons
+        tk.Button(root, text="Speak", command=self.speak_text).pack(pady=10)
+        tk.Button(root, text="Clear", command=self.clear_text).pack(pady=5)
+   
