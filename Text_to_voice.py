@@ -31,4 +31,10 @@ class TextToSpeechApp:
         # Buttons
         tk.Button(root, text="Speak", command=self.speak_text).pack(pady=10)
         tk.Button(root, text="Clear", command=self.clear_text).pack(pady=5)
-   
+    
+    def speak_text(self):
+        text = self.text_input.get("1.0", tk.END).strip()
+        if not text:
+            messagebox.showwarning("Warning", "Please enter some text!")
+            return
+        
