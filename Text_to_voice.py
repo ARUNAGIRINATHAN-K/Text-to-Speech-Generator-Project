@@ -9,4 +9,6 @@ class TextToSpeechApp:
         self.root.title("Text to Speech Generator")
         self.root.geometry("400x300")
         
+        # Initialize pyttsx3 engine
+        self.engine = pyttsx3.init()
         
